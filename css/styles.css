@@ -31,7 +31,7 @@ body {
   color: var(--logo-text-color);
 }
 
-.web,
+.logo-accent,
 .header-list .link:hover,
 .header-list .link:focus,
 .header-contacts .link:hover,
@@ -43,6 +43,10 @@ body {
 
 .header-list .link {
   color: var(--dark-color);
+}
+
+.header-list .link.current {
+  color: var(--brand-color);
 }
 
 .header-contacts .link,
@@ -102,6 +106,13 @@ body {
 .our-team {
   background-color: var(--secondary-bgcolor);
 }
+
+/* для лучшего отображения временно закоментировал 
+фон карточек нашей команды */
+
+/* .our-team-card {
+  background-color: var(--white-color);
+} */
 
 /* сбрасываем стили p в стили h3 */
 
