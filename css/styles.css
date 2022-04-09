@@ -11,62 +11,15 @@
   --logo-text-color: #000; /* logo-studio-text-color */
   --line-color: #ececec; /* header-line-color */
   --aktive-btn-color: #188ce8; /* aktive-button-color */
-
-  /*
-  --font-text: 14px;
-  --font-weight-main: 500; 
-  */
 }
 
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--dark-color);
-
   background-color: var(--white-color);
 }
 
 /* стили шапки */
-
-.logo {
-  color: var(--logo-text-color);
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-
-.logo-accent,
-.header-list .link:hover,
-.header-list .link:focus,
-.header-contacts .link:hover,
-.header-contacts .link:focus,
-.footer-contakts:hover,
-.footer-contakts:focus {
-  color: var(--brand-color);
-}
-
-.header-list .link {
-  color: var(--dark-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
-
-.header-list .link.current {
-  color: var(--brand-color);
-}
-
-.header-contacts .link,
-.section-peculiarity .text,
-.our-team-item {
-  color: var(--secondary-text-color);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-}
 
 .list {
   list-style: none;
@@ -76,11 +29,57 @@ body {
   text-decoration: none;
 }
 
+.logo {
+  color: var(--logo-text-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.logo-accent {
+  color: var(--brand-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.header-list .link {
+  color: var(--dark-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.header-contacts .link {
+  color: var(--secondary-text-color);
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.header-list .link:hover,
+.header-list .link:focus,
+.header-contacts .link:hover,
+.header-contacts .link:focus,
+.header-list .link.current {
+  color: var(--brand-color);
+}
+
 /* стили героя */
 
 .hero {
   background-color: var(--hero-bgcolor);
-  font-style: normal;
+}
+
+.hero-title {
+  color: var(--white-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -89,15 +88,14 @@ body {
   text-transform: uppercase;
 }
 
-.hero-title,
-.hero .btn,
-.footer-white-text,
-.footer-address {
-  color: var(--white-color);
-}
-
 .hero .btn {
   background-color: var(--brand-color);
+  color: var(--white-color);
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
 }
 
 .hero .btn:hover,
@@ -110,71 +108,125 @@ body {
   cursor: pointer;
 }
 
-/* стили секции "особенности" */
+/* стили особенности */
 
-.section-peculiarity-title,
-.our-works-item,
-.filter-title,
-.portfolio-title {
+.section-peculiarity-title {
   display: none;
 }
 
-/* стили секции "чем мы занимаемся" */
-/* секция "наша команда" */
+.section-peculiarity .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.section-peculiarity .text {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
+}
+
+/* стили чем мы занимаемся */
+
+.our-works .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-works-item {
+  display: none;
+}
+
+/* стили наша команда */
 
 .our-team {
   background-color: var(--secondary-bgcolor);
 }
 
-/* для лучшего отображения временно закоментировал 
-фон карточек нашей команды */
-
-/* .our-team-card {
-  background-color: var(--white-color);
-} */
-
-/* сбрасываем стили p в стили h3 */
-
-.our-team-item-name,
-.projects-company {
-  display: block;
-  font-size: 1.17em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
+.our-team .title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-/* сбрасываем стили h3 в стили p */
+.our-team-card {
+  background-color: var(--white-color);
+}
 
-.our-team-item,
-.projects-type {
-  display: block;
-  font-size: 1em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: normal;
+.our-team-item-name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.our-team-item {
+  color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 /* секция "футер" */
+
 .footer {
   background-color: var(--hero-bgcolor);
 }
 
+.footer-logo {
+  color: var(--white-color);
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.footer-address {
+  color: var(--white-color);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
+}
+
 .footer-contakts {
   color: var(--footer-contacts-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.72;
+  letter-spacing: 0.03em;
 }
 
 /* страница порфолио */
 
-/* секция фильтр */
+/* страница секция фильтр */
+
+.filter-title {
+  display: none;
+}
 
 .filter .btn {
   background-color: var(--secondary-bgcolor);
-  color: var(--dark-color);
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
 .filter .btn:hover,
@@ -183,12 +235,23 @@ body {
   color: var(--white-color);
 }
 
-/* сeкция проекты */
+/* страница проекты */
 
-.projects-item {
-  background-color: var(--white-color);
+.portfolio-title {
+  display: none;
+}
+
+.projects-company {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
 }
 
 .projects-type {
   color: var(--secondary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
 }
