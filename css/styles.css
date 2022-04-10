@@ -213,13 +213,13 @@ body {
 
 /* страница порфолио */
 
-/* страница секция фильтр */
+/* фильтр */
 
 .filter-title {
   display: none;
 }
 
-.filter .btn {
+.portfolio .btn {
   background-color: var(--secondary-bgcolor);
   font-family: inherit;
   font-weight: 500;
@@ -229,13 +229,13 @@ body {
   letter-spacing: 0.03em;
 }
 
-.filter .btn:hover,
-.filter .btn:focus {
+.portfolio .btn:hover,
+.portfolio .btn:focus {
   background-color: var(--brand-color);
   color: var(--white-color);
 }
 
-/* страница проекты */
+/* проекты */
 
 .portfolio-title {
   display: none;
